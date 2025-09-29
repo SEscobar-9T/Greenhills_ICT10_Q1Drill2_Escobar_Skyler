@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Drill#2</title>
+
+    <style>
+
+    body {
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	font-family: courier;
+    background-color: rgba(91, 4, 184, 0.75);
+    }
+
+    form {
+	background-color: rgb(246, 140, 11);
+	border-radius: 10px;
+	padding: 40px ;
+	margin: 0 auto;
+	width: 500px;
+    text-align: center;
+    }
+
+    h2 {
+	text-align: center;
+	color: rgba(91, 4, 184, 0.75);
+    font-size: 45px;
+    margin-bottom: 10px;
+    background-color: rgb(246, 140, 11);
+    margin: 5%;
+    margin-left: 65px;
+    border-radius: 10px;
+    }
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+
+    </style>
+
+</head>
+<body>
+
+        
+    <h2>String Showcase: My Basic Info</h2>
+
+    <form>
+        <input type="text" id="input1" placeholder="Enter your name:">
+        <br />
+        <br />
+
+        <input type="number" id="input2" placeholder="Enter your age:">
+        <br />
+        <br />
+
+        <input type="text" id="input3" placeholder="Enter your school:">
+        <br />
+        <br />
+
+        <button type="button" id="output" py-click="generate_card">Generate Message</button>
+        <br />
+        <br />
+
+        <button type="button" onClick="window.location.reload()">Refresh</button>
+        <hr />
+    </form>
+
+    <div id="output"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
